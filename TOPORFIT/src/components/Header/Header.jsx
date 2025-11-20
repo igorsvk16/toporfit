@@ -56,16 +56,20 @@ function Header() {
         </nav>
 
         <div className="header__actions">
-          <button 
-            className="header__theme-toggle" 
-            onClick={toggleTheme}
-            aria-label="Переключить тему"
-          >
-            {isDark ? '☀️' : '🌙'}
-          </button>
           <button className="header__btn" aria-label="write">
             Задать вопрос
           </button>
+        </div>
+
+        <div className="header__theme-switcher">
+          <label className="theme-switch" aria-label="Переключить тему">
+            <input 
+              type="checkbox" 
+              checked={isDark} 
+              onChange={toggleTheme}
+            />
+            <span className="theme-slider"></span>
+          </label>
         </div>
 
         <button 
