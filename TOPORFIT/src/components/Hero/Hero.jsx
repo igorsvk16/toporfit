@@ -5,7 +5,7 @@ function Hero() {
     <section className="hero">
       <div className="hero__container">
         <img 
-          src="/path-to-trainer-photo.jpg" 
+          src="../../src/assets/trainer.jpg" 
           alt="Тренер" 
           className="hero__image"
         />
