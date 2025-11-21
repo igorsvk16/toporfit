@@ -22,13 +22,13 @@
 .header__logo a {
   font-size: 24px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #2B3F72;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .header__logo a:hover {
-  color: #2B3F72;
+  color: #1f2e52;
 }
 
 /* Navigation */

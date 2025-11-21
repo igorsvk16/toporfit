@@ -23,7 +23,7 @@ body.dark-theme .header {
 }
 
 body.dark-theme .header__logo a {
-  color: #FFFFFF;
+  color: #2B3F72;
 }
 
 body.dark-theme .header__link {
@@ -46,7 +46,7 @@ body.light-theme .header {
 }
 
 body.light-theme .header__logo a {
-  color: #000000;
+  color: #2B3F72;
 }
 
 body.light-theme .header__link {

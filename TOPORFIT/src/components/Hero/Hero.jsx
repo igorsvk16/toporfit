@@ -4,12 +4,13 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero__container">
+        <h1 className="hero__title-fill">TOPORFIT</h1>
         <img 
-          src="../../src/assets/trainer.jpg" 
+          src="/trainer.webp" 
           alt="Тренер" 
           className="hero__image"
         />
-        <h1 className="hero__title">TOPORFIT</h1>
+        <h1 className="hero__title-stroke">TOPORFIT</h1>
       </div>
     </section>
   )
