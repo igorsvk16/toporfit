@@ -35,13 +35,12 @@
   margin: 0;
   padding: 0;
   white-space: nowrap;
-  animation: fadeIn 1s ease-in-out;
+  line-height: 1;
   
   /* Улучшение рендеринга текста */
   text-rendering: geometricPrecision;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: auto;
-  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Синяя заливка (самый нижний слой - z-index: 1) */
@@ -58,20 +57,17 @@
   object-fit: contain;
   object-position: center;
   z-index: 2;
-  border-radius: 20px;
-  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
 }
 
 /* Обводка с прозрачной заливкой (самый верхний слой - z-index: 3) */
 .hero__title-stroke {
   color: transparent;
-  -webkit-text-stroke: 2.5px #2B3F72;
-  text-stroke: 2.5px #2B3F72;
+  -webkit-text-stroke: 3px #2B3F72;
+  text-stroke: 3px #2B3F72;
   paint-order: stroke fill;
   z-index: 3;
-  
-  /* Дополнительное сглаживание для обводки */
-  filter: contrast(1.05);
+  /* Точное совпадение позиции */
+  transform: translate(-50%, -50%) translateZ(0);
 }
 
 /* Для светлой темы */
@@ -102,16 +98,7 @@ body.dark-theme .hero__title-stroke {
   text-stroke: 2.5px #2B3F72;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
+/* Удалена анимация fadeIn, которая конфликтовала с transform: translate */
 
 /* Адаптивность */
 @media (max-width: 768px) {
