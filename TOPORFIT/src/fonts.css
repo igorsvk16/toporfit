@@ -1,0 +1,17 @@
+/* Локальный Montserrat ExtraBold (800) */
+@font-face {
+  font-family: 'Montserrat Local';
+  src: url('/fonts/Montserrat-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Локальный Montserrat Black (900) */
+@font-face {
+  font-family: 'Montserrat Local';
+  src: url('/fonts/Montserrat-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
