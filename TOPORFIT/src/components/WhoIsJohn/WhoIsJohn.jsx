@@ -21,14 +21,14 @@ function WhoIsJohn() {
             </svg>
           </div>
           <img 
-            src="/trainer.webp" 
+            src="/trainer1.webp" 
             alt="Иван - персональный тренер" 
             className="who-is-john__image"
           />
         </div>
         
         <div className="who-is-john__content">
-          <h2 className="who-is-john__title">КТО ТАКОЙ ИВАН?</h2>
+          <h2 className="who-is-john__title">КТО Я?</h2>
           <p className="who-is-john__text">
             Как увлечённый персональный тренер, я верю в то, что могу помочь каждому достичь своих фитнес-целей через персонализированный коучинг и поддержку.
           </p>
