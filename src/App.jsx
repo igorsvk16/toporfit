@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import WhoIsJohn from './components/WhoIsJohn/WhoIsJohn'
 import About from './components/About/About'
+import Reviews from './components/Reviews/Reviews'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <WhoIsJohn />
       <About />
+      <Reviews />
       <div className='container'></div>
     </>
   )
