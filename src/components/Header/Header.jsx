@@ -1,37 +1,6 @@
 import './Header.css'
-import { useState, useEffect } from 'react'
 
 function Header() {
-  const [isDark, setIsDark] = useState(true)
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme')
-    if (savedTheme === 'light') {
-      setIsDark(false)
-      document.body.classList.remove('dark-theme')
-      document.body.classList.add('light-theme')
-    } else {
-      setIsDark(true)
-      document.body.classList.add('dark-theme')
-      document.body.classList.remove('light-theme')
-    }
-  }, [])
-
-  const toggleTheme = () => {
-    const newTheme = !isDark
-    setIsDark(newTheme)
-    
-    if (newTheme) {
-      document.body.classList.add('dark-theme')
-      document.body.classList.remove('light-theme')
-      localStorage.setItem('theme', 'dark')
-    } else {
-      document.body.classList.remove('dark-theme')
-      document.body.classList.add('light-theme')
-      localStorage.setItem('theme', 'light')
-    }
-  }
-
   return (
     <header className="header">
       <div className="header__container">
@@ -59,17 +28,6 @@ function Header() {
           <button className="header__btn" aria-label="write">
             Задать вопрос
           </button>
-        </div>
-
-        <div className="header__theme-switcher">
-          <label className="theme-switch" aria-label="Переключить тему">
-            <input 
-              type="checkbox" 
-              checked={isDark} 
-              onChange={toggleTheme}
-            />
-            <span className="theme-slider"></span>
-          </label>
         </div>
 
         <button 
