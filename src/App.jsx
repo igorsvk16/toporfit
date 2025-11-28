@@ -6,7 +6,6 @@ import About from './components/About/About'
 import Reviews from './components/Reviews/Reviews'
 
 function App() {
-
   return (
     <>
       <Header />

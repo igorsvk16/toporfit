@@ -6,6 +6,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body, html {
@@ -14,4 +16,9 @@ body, html {
   font-family: 'Montserrat Local', sans-serif;
   background-color: #000000;
   color: #FFFFFF;
+  overscroll-behavior: smooth;
+}
+
+body {
+  will-change: scroll-position;
 }

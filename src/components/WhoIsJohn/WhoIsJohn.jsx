@@ -10,7 +10,7 @@ function WhoIsJohn() {
               <defs>
                 <path
                   id="circlePath"
-                  d="M 100, 100 m -90, 0 a 90,90 0 1,1 180,0 a 90,90 0 1,1 -180,0"
+                  d="M 100, 100 m -70, 0 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0"
                 />
               </defs>
               <text className="who-is-john__circle-text">
