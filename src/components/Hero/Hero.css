@@ -97,7 +97,7 @@ body.dark-theme .hero__title-stroke {
 /* Кнопка прокрутки вниз */
 .hero__scroll-btn {
   position: absolute;
-  bottom: 40px;
+  bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 50px;
@@ -166,7 +166,7 @@ body.dark-theme .hero__scroll-btn img {
   .hero__scroll-btn {
     width: 40px;
     height: 40px;
-    bottom: 60px;
+    bottom: 90px;
   }
 }
 
@@ -188,6 +188,6 @@ body.dark-theme .hero__scroll-btn img {
   .hero__scroll-btn {
     width: 35px;
     height: 35px;
-    bottom: 80px;
+    bottom: 100px;
   }
 }

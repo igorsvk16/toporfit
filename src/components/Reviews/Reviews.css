@@ -39,7 +39,7 @@
   height: 600px;
   overflow: hidden;
   border-radius: 20px;
-  cursor: ew-resize;
+  cursor: default;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
@@ -60,6 +60,7 @@
 
 .reviews__image-container--after {
   z-index: 2;
+  transition: clip-path 0.15s ease-out;
 }
 
 .reviews__image {
@@ -101,6 +102,7 @@
   z-index: 4;
   transform: translateX(-50%);
   pointer-events: none;
+  transition: left 0.15s ease-out;
 }
 
 .reviews__slider-line {

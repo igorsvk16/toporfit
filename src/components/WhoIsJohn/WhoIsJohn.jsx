@@ -15,7 +15,7 @@ function WhoIsJohn() {
               </defs>
               <text className="who-is-john__circle-text">
                 <textPath href="#circlePath">
-                  TOPORFIT • TOPORFIT • TOPORFIT • 
+                  TOPORFIT • TOPORFIT • TOPORFIT • TOPORFIT • TOPORFIT • 
                 </textPath>
               </text>
             </svg>

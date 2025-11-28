@@ -4,6 +4,7 @@ import { useState } from 'react'
 function Reviews() {
   const [sliderPosition, setSliderPosition] = useState(50)
   const [currentReview, setCurrentReview] = useState(0)
+  const [isDragging, setIsDragging] = useState(false)
 
   const reviews = [
     {
@@ -36,7 +37,8 @@ function Reviews() {
   ]
 
   const handleSliderMove = (e) => {
-    const container = e.currentTarget
+    if (!isDragging) return
+    const container = e.currentTarget.closest('.reviews__comparison')
     const rect = container.getBoundingClientRect()
     const x = e.clientX - rect.left
     const percentage = (x / rect.width) * 100
@@ -44,11 +46,28 @@ function Reviews() {
   }
 
   const handleTouchMove = (e) => {
-    const container = e.currentTarget
+    if (!isDragging) return
+    const container = e.currentTarget.closest('.reviews__comparison')
     const rect = container.getBoundingClientRect()
     const x = e.touches[0].clientX - rect.left
     const percentage = (x / rect.width) * 100
     setSliderPosition(Math.max(0, Math.min(100, percentage)))
+  }
+
+  const handleMouseDown = () => {
+    setIsDragging(true)
+  }
+
+  const handleMouseUp = () => {
+    setIsDragging(false)
+  }
+
+  const handleTouchStart = () => {
+    setIsDragging(true)
+  }
+
+  const handleTouchEnd = () => {
+    setIsDragging(false)
   }
 
   const nextReview = () => {
@@ -73,7 +92,10 @@ function Reviews() {
           <div 
             className="reviews__comparison"
             onMouseMove={handleSliderMove}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseUp}
             onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
           >
             {/* Before Image (фон) */}
             <div className="reviews__image-container">
@@ -104,7 +126,11 @@ function Reviews() {
               style={{ left: `${sliderPosition}%` }}
             >
               <div className="reviews__slider-line"></div>
-              <div className="reviews__slider-handle">
+              <div 
+                className="reviews__slider-handle"
+                onMouseDown={handleMouseDown}
+                onTouchStart={handleTouchStart}
+              >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path d="M15 18L9 12L15 6" stroke="white" strokeWidth="2" strokeLinecap="round"/>
                   <path d="M9 18L15 12L9 6" stroke="white" strokeWidth="2" strokeLinecap="round"/>
