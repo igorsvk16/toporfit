@@ -3,8 +3,9 @@ import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import WhoIsJohn from './components/WhoIsJohn/WhoIsJohn'
 import About from './components/About/About'
-import Pricing from './components/Pricing/Pricing'
 import Reviews from './components/Reviews/Reviews'
+import Pricing from './components/Pricing/Pricing'
+import FAQ from './components/FAQ/FAQ'
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <Hero />
       <WhoIsJohn />
       <About />
-      <Pricing />
       <Reviews />
+      <Pricing />
+      <FAQ />
       <div className='container'></div>
     </>
   )

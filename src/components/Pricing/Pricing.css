@@ -14,7 +14,7 @@
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  color: #FF0000;
+  color: #2B3F72;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 10px;
@@ -52,8 +52,8 @@
 }
 
 .pricing__card--popular {
-  background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
-  border-color: #FF0000;
+  background: linear-gradient(135deg, #2B3F72 0%, #1f2e52 100%);
+  border-color: #2B3F72;
   transform: scale(1.05);
 }
 
@@ -65,8 +65,8 @@
   position: absolute;
   top: -15px;
   right: 20px;
-  background-color: #FFFFFF;
-  color: #FF0000;
+  background-color: #2B3F72;
+  color: #FFFFFF;
   padding: 8px 20px;
   border-radius: 20px;
   font-size: 14px;
@@ -144,7 +144,7 @@
 .pricing__button {
   width: 100%;
   padding: 15px 30px;
-  background-color: #FF0000;
+  background-color: #2B3F72;
   color: #FFFFFF;
   border: none;
   border-radius: 10px;
@@ -157,7 +157,7 @@
 }
 
 .pricing__button:hover {
-  background-color: #CC0000;
+  background-color: #1f2e52;
   transform: translateY(-2px);
 }
 
@@ -166,13 +166,13 @@
 }
 
 .pricing__card--popular .pricing__button {
-  background-color: #000000;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #2B3F72;
   border: 2px solid #FFFFFF;
 }
 
 .pricing__card--popular .pricing__button:hover {
-  background-color: #1a1a1a;
+  background-color: rgba(255, 255, 255, 0.9);
   transform: translateY(-2px);
 }
 
