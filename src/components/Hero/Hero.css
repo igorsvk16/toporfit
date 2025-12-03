@@ -150,13 +150,13 @@ body.dark-theme .hero__scroll-btn img {
 /* Адаптивность */
 @media (max-width: 768px) {
   .hero__image {
-    height: 65%;
-    max-width: 65%;
+    height: 55%;
+    max-width: 55%;
   }
   
   .hero__title-fill,
   .hero__title-stroke {
-    font-size: clamp(60px, 12vw, 120px);
+    font-size: clamp(70px, 13vw, 130px);
   }
   
   .hero__title-stroke {
@@ -166,19 +166,19 @@ body.dark-theme .hero__scroll-btn img {
   .hero__scroll-btn {
     width: 40px;
     height: 40px;
-    bottom: 90px;
+    bottom: 110px;
   }
 }
 
 @media (max-width: 480px) {
   .hero__image {
-    height: 55%;
-    max-width: 75%;
+    height: 45%;
+    max-width: 60%;
   }
   
   .hero__title-fill,
   .hero__title-stroke {
-    font-size: clamp(40px, 10vw, 80px);
+    font-size: clamp(50px, 12vw, 90px);
   }
   
   .hero__title-stroke {
@@ -188,6 +188,6 @@ body.dark-theme .hero__scroll-btn img {
   .hero__scroll-btn {
     width: 35px;
     height: 35px;
-    bottom: 100px;
+    bottom: 120px;
   }
 }
