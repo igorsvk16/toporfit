@@ -252,7 +252,7 @@
   }
 
   .header__actions {
-    gap: 10px;
+    display: none;
   }
 
   .header__phone {

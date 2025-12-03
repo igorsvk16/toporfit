@@ -281,6 +281,7 @@ body.light-theme .who-is-john__stat-label {
   
   .who-is-john__circle-text {
     font-size: 14px;
+    font-weight: 950;
     letter-spacing: 2px;
   }
 }

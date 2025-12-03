@@ -173,12 +173,12 @@ body.dark-theme .hero__scroll-btn img {
 @media (max-width: 480px) {
   .hero__image {
     height: 45%;
-    max-width: 60%;
+    max-width: 55%;
   }
   
   .hero__title-fill,
   .hero__title-stroke {
-    font-size: clamp(50px, 12vw, 90px);
+    font-size: clamp(60px, 12vw, 90px);
   }
   
   .hero__title-stroke {
