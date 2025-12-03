@@ -104,7 +104,7 @@ function Reviews() {
                 alt="До тренировок" 
                 className="reviews__image reviews__image--before"
               />
-              <span className="reviews__label reviews__label--before">ДО</span>
+              <span className="reviews__label reviews__label--before">ПОСЛЕ</span>
             </div>
 
             {/* After Image (с маской) */}
@@ -117,7 +117,7 @@ function Reviews() {
                 alt="После тренировок" 
                 className="reviews__image reviews__image--after"
               />
-              <span className="reviews__label reviews__label--after">ПОСЛЕ</span>
+              <span className="reviews__label reviews__label--after">ДО</span>
             </div>
 
             {/* Slider */}

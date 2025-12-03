@@ -61,6 +61,8 @@
 .reviews__image-container--after {
   z-index: 2;
   will-change: clip-path;
+    transform: translate(9px, -11px);
+
 }
 
 .reviews__image {
@@ -100,7 +102,7 @@
   width: 4px;
   background-color: transparent;
   z-index: 4;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translate(9px, -11px);
   pointer-events: none;
   will-change: left;
 }
