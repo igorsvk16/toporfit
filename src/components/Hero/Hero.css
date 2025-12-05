@@ -22,9 +22,9 @@
 .hero__title-fill,
 .hero__title-stroke {
   position: absolute;
-  top: 45%;
+  bottom: 8%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   font-size: clamp(80px, 15vw, 200px);
   font-weight: 800;
   font-family: 'Montserrat Local', 'Montserrat', sans-serif;
@@ -51,12 +51,12 @@
 
 .hero__image {
   position: absolute;
-  top: 42%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: auto;
-  height: 55%;
-  max-width: 50%;
+  height: 65%;
+  max-width: 55%;
   object-fit: contain;
   z-index: 2;
 }
@@ -149,6 +149,10 @@ body.dark-theme .hero__scroll-btn img {
 
 /* Адаптивность */
 @media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+  
   .hero__image {
     height: 55%;
     max-width: 55%;
@@ -171,14 +175,21 @@ body.dark-theme .hero__scroll-btn img {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    height: 70vh;
+  }
+  
   .hero__image {
     height: 45%;
     max-width: 55%;
+    top: 40%;
   }
   
   .hero__title-fill,
   .hero__title-stroke {
     font-size: clamp(60px, 12vw, 90px);
+    bottom: 40%;
+    top: 62%;
   }
   
   .hero__title-stroke {
@@ -188,6 +199,9 @@ body.dark-theme .hero__scroll-btn img {
   .hero__scroll-btn {
     width: 35px;
     height: 35px;
-    bottom: 200px;
+    bottom: 50px;
   }
+  
 }
+
+
